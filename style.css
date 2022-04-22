@@ -1,0 +1,37 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.nav-enlace{
+    display: inline-block;
+    color:#fff;
+    padding: 10px 30px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: blue;
+}
+nav{
+    background: #d6afdc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+
+@media (max-width: 500px) {
+    nav{
+        background: none;
+        flex-direction: column;
+    }
+    .nav-enlace{
+        margin: 10px 0;
+    }
+    .nav-boton{
+        display: inline-block;
+    }
+    .desaparece{
+        display: none;
+    }
+}
